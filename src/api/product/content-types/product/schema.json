@@ -76,10 +76,15 @@
         "images"
       ]
     },
-    "productCategory": {
+    "category": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "productName"
     }
   }
 }
