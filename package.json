@@ -9,12 +9,12 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.6.0",
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
+    "@strapi/plugin-i18n": "4.6.0",
     "@strapi/plugin-users-permissions": "4.6.0",
     "@strapi/provider-upload-cloudinary": "4.6.0",
-    "@strapi/plugin-i18n": "4.6.0",
+    "@strapi/strapi": "4.6.0",
     "better-sqlite3": "7.4.6"
   },
   "author": {

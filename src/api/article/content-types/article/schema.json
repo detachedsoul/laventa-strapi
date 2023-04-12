@@ -24,10 +24,6 @@
         "images"
       ]
     },
-    "summary": {
-      "type": "richtext",
-      "required": true
-    },
     "authorImage": {
       "type": "media",
       "multiple": false,
@@ -40,10 +36,6 @@
       "type": "date",
       "required": true
     },
-    "articleContent": {
-      "type": "richtext",
-      "required": true
-    },
     "slug": {
       "type": "uid",
       "required": true,
@@ -51,6 +43,24 @@
     },
     "author": {
       "type": "string",
+      "required": true
+    },
+    "summary": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor",
+      "required": true
+    },
+    "articleContent": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor",
       "required": true
     }
   }

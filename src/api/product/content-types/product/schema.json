@@ -44,14 +44,6 @@
       "required": true,
       "default": 1
     },
-    "highlights": {
-      "type": "richtext",
-      "required": true
-    },
-    "details": {
-      "type": "richtext",
-      "required": true
-    },
     "productImageOne": {
       "type": "media",
       "multiple": false,
@@ -85,6 +77,24 @@
       "type": "uid",
       "required": true,
       "targetField": "productName"
+    },
+    "highlights": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "details": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
